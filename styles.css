@@ -69,6 +69,7 @@ nav li a:hover {
 
 /*Bloque principal ------------------------------------------------------------------------------------------*/
 main {
+  flex:1;
   padding: 40px;
   max-width: 1200px;
   margin: auto;
