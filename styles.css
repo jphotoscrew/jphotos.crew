@@ -1,8 +1,5 @@
 body {
   margin: 0;
-  min-height: 100vh;
-  display:flex;
-  flex-direction:column;
   font-family: 'Montserrat', sans-serif;
   background-color: #ffffff;
   color: #333;
@@ -69,7 +66,6 @@ nav li a:hover {
 
 /*Bloque principal ------------------------------------------------------------------------------------------*/
 main {
-  flex:1;
   padding: 40px;
   max-width: 1200px;
   margin: auto;
