@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Cabecera -----------------------------------------------------------------------------------------*/
+header {
+    background-image: url('faro.jpg');
+    background-size:cover;
+    background-position:center;
+    height: 300px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    font-size:72px;
+    font-weight:bold;
+    background-color:rgba(0, 0, 0, 0.667);
+    padding:10px 20px;
+    border-radius:8px;
+    margin:0;
+}
+
+/* Menú de navegación ----------------------------------------------------------------------*/
+nav {
+  background-color: transparent; /* sin fondo opaco */
+  padding: 20px 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*Lista como estructura*/
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+}
+
+/* Texto de la lista*/
+nav li a {
+  color:#ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding:10px 18px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  background:rgba(4, 116, 172, 0.7);
+  backdrop-filter:blur(5px);
+}
+
+/* Texto cuando se coloca el ratón encima*/
+nav li a:hover { 
+  background: rgba(255, 255, 255, 0.627);
+  color: #000;
+}
+
+/*Bloque principal ------------------------------------------------------------------------------------------*/
+main {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+.titulo-envoltura{
+    text-align:center;
+}
+
+.titulo-principal{
+  font-size:60px;
+  font-weight:900;
+  text-align:center;
+  margin:60px 0 40px 0;
+  color:#111111;
+  letter-spacing:2px;
+  position:relative;
+  display:inline-block;
+}
+
+.titulo-principal::after{
+    content:"";
+    display:block;
+    width:60%;
+    height:5px;
+    background:rgba(4, 116, 172, 0.7);
+    margin:20px auto 0 auto;
+    border-radius: 3px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+form input, form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+form button:hover {
+  background-color: #444;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}
